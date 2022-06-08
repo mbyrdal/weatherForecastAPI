@@ -1,0 +1,73 @@
+html * {
+    font-family: 'Arvo', serif !important;
+}
+
+#header {
+    background-image: url('https://www.dropbox.com/s/ymui904llio8f3l/weatherPicture.png?raw=1');
+    background-repeat: no-repeat;
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px red;
+    min-width: 1200px;
+}
+
+#btnSubmit {
+    display: inline-block;
+    margin: 10px 10px 0 83px;
+    height: 22px;
+    width: 160px;
+    border: 1px solid black;
+    border-radius: 0.34px;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+
+#btnSubmit:hover {
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+}
+
+.weatherContent {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 675px;
+    text-align: left;
+    min-width: 400px;
+}
+
+.weatherContent, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#units {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+}
+
+.weatherContent > td {
+    padding: 12px 15px;
+}
+
+#map {
+    margin: 5px 0 5px 0;
+    height: auto;
+    min-height: 425px;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}

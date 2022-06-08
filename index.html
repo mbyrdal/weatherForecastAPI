@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Daily Weather Forecast</title>
+</head>
+<body>
+    <h1 id="header">Weather forecast</h1><br>
+    <p>This widget fetches the daily weather forecast for a specific city.</p><br>
+
+    <label for="cityInput">Enter city: </label>
+    <input type="text" id="cityInput" value="London"><br>
+    <button id="btnSubmit" onclick="fetchData()">Submit</button><br><br>
+
+    <table class="weatherContent">
+        <caption>Weather forecast data</caption>
+        <tr id="units">
+            <td>Temperature: °</td>
+            <td>Atmospheric pressure: mBar</td>
+            <td>Humidity level: %</td>
+            <td>Latitude: °</td>
+            <td>Longitude: °</td>
+        </tr>
+        <tr id="values">
+            <td id="text-temp">X</td>
+            <td id="text-pres">X</td>
+            <td id="text-humi">X</td>
+            <td id="text-lati">X</td>
+            <td id="text-long">X</td>
+        </tr>
+    </table>
+
+    <div id="map"></div>
+    <div class="footer">
+        <a href="https://www.freepik.com/free-photos-vectors/snow">Header logo created by freepik - www.freepik.com</a>
+    </div>
+    <script src="mapScript.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script defer 
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6uGdoZVZB4UcmljFutiTTHPA2tpYY7Cw">
+    </script>
+</body>
+</html>
